@@ -4,7 +4,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 This is a simple Todo App using Angular, where you can add item to the list, remove item from it or update. The lis tis saved in local storage.
 
-![screenshot](https://github.com/ritesh1869/Todo/blob/master/src/assets/images/TodoApp.png>)
+![alt text](https://github.com/ritesh1869/Todo/blob/master/src/assets/images/TodoApp.png>)
 
 
 ## Development server
