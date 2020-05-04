@@ -1,0 +1,25 @@
+<div *ngIf="appState == 'default'">
+  <h4>Add Todo</h4>
+  <form (submit)="addTodo()">
+    <input class="form-control" type="text" [(ngModel)]="text" name="addText">
+  </form>
+</div>
+
+<div *ngIf="appState == 'edit'">
+  <h4>Edit Todo</h4>
+  <form (submit)="updateTodo()">
+    <input class="form-control" type="text" [(ngModel)]="text" name="updateText">
+  </form>
+</div>
+
+<div class="card-body bg-light">
+  <h4>
+    Todo List
+  </h4>
+  <ul>
+    <li *ngFor="let todo of todos">
+      <span (click)="editTodo(todo)"> {{todo.text}} </span>
+      <button class="btn btn-light" (click)="deleteTodo(todo.text)">X</button>
+    </li>
+  </ul>
+</div>
